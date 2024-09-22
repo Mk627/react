@@ -1,23 +1,43 @@
-import React from 'react'
-import Header from '../components/Header';
-import { Outlet } from 'react-router';
-import { NavLink } from 'react-router-dom';
-
-// const Homepage = ({ age, data }) => {
-//   console.log(data);
-const Homepage = (props) => {
-  const { age, data } = props;
-  console.log(age);
-
+const HomePage = () => {
   return (
-    <div className='p-4 , space-x-4'>
-      < Header />
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, rerum!</p>
-      < NavLink to={'/Page1'}>page1</NavLink>
-      < NavLink to={'/Page2'}>page2</NavLink>
-      <Outlet />
+    <div className="min-h-screen flex justify-center items-center bg-sky-900">
+      <div className="h-[400px] w-full max-w-[650px]  grid grid-cols-4 grid-rows-3 gap-2">
+
+        <div className="bg-green-600 grid place-items-center row-span-3">
+          <h1>bx1</h1>
+        </div>
+
+        <div className="bg-green-500 col-span-2 flex justify-center items-center">
+          <h1>bx2</h1>
+        </div>
+
+        <div className="bg-red-600 flex justify-center items-center">
+          <h1>bx3</h1>
+        </div>
+
+        <div className="bg-yellow-400 flex justify-center items-center">
+          <h1>bx4</h1>
+        </div>
+
+        <div className="bg-red-600 flex justify-center items-center">
+          <h1>bx5</h1>
+        </div>
+
+        <div className="bg-green-600 row-span-2 flex justify-center items-center">
+          <h1>bx6</h1>
+        </div>
+
+        <div className="bg-red-700 flex justify-center items-center">
+          <h1>bx7</h1>
+        </div>
+
+        <div className="bg-red-400 flex justify-center items-center">
+          <h1>bx8</h1>
+        </div>
+
+      </div>
     </div>
-  )
+  );
 }
 
-export default Homepage
+export default HomePage;
